@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="drawable_bound">24dp</dimen>
+
+    <dimen name="toolbar_header">20sp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">64dp</dimen>
+
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_product_radius">3dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+
+    <dimen name="cart_item_image_width">90dp</dimen>
+    <dimen name="cart_item_image_height">90dp</dimen>
+    <dimen name="product_cover_width">120dp</dimen>
+    <dimen name="product_cover_height">120dp</dimen>
+    <dimen name="product_name_padding">5dp</dimen>
+    <dimen name="product_name">15sp</dimen>
+    <dimen name="product_price">12sp</dimen>
+
+
+    <dimen name="button_height">30dp</dimen>
+</resources>
