@@ -139,4 +139,9 @@ public class _CartItemsDB extends DatabaseManager {
         long count = db.delete(_Product.TABLE, _Product.ID + "=?", new String[]{"" + product.getId()});
         return count;
     }
+    public long deleteAllProductsFromCart() {
+        SQLiteDatabase db = open();
+        long count = db.delete(_Product.TABLE, null, null);
+        return count;
+    }
 }

@@ -1,15 +1,20 @@
 package com.harshal.cuelogicandroidtest.fragment;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.harshal.cuelogicandroidtest.BaseActivity;
 import com.harshal.cuelogicandroidtest.R;
 import com.harshal.cuelogicandroidtest.adapter.CartItemsAdapter;
 import com.harshal.cuelogicandroidtest.database._CartItemsDB;
@@ -36,6 +41,25 @@ public class CartFragment extends BaseFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
+        setHasOptionsMenu(true);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.menu_cart, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_clear:
+                new _CartItemsDB(getActivity()).deleteAllProductsFromCart();
+                refreshCartItems();
+                ((BaseActivity) getActivity()).showSnackBarLong(getView(), getString(R.string.clear_cart_items), Color.WHITE);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

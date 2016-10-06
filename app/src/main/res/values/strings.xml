@@ -6,6 +6,8 @@
     <string name="shop">Shop</string>
     <string name="cart">Cart</string>
     <string name="refresh">Refresh</string>
+    <string name="clear">Clear</string>
+    <string name="clear_cart">Clear Cart</string>
     <string name="add_to_cart">Add to Cart</string>
     <string name="call_vendor">Call Vendor</string>
     <string name="remove_from_cart">Remove from Cart</string>
@@ -15,6 +17,7 @@
     <string name="Rs">\u20B9</string>
     <string name="loading_please_wait">Loading... Please Wait...</string>
     <string name="loading_in_progress">Loading is already in progress.</string>
+    <string name="clear_cart_items">Removed all items from cart</string>
     <string name="no_data_found">No Data Found</string>
     <string name="no_items_in_cart">No items available in cart</string>
     <string name="product_added_to_cart">Product added to cart</string>
