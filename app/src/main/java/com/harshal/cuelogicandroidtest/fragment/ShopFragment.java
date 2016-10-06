@@ -54,7 +54,7 @@ public class ShopFragment extends BaseFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-//        setHasOptionsMenu(true);
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -127,8 +127,7 @@ public class ShopFragment extends BaseFragment {
         }
     }
 
-
-    /*@Override
+    @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu_shop, menu);
@@ -148,7 +147,7 @@ public class ShopFragment extends BaseFragment {
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 
     private void inItAllUiViews(View view) {
         txtDummy = (TextView) view.findViewById(R.id.txtDummy);
